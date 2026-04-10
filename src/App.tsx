@@ -61,11 +61,11 @@ export default function App() {
               className="space-y-5"
             >
               <h2 className="text-xl font-bold text-white min-h-[52px]">
-                步骤 1: 您正在寻找什么?
+                Schritt 1: Wonach suchen Sie?
               </h2>
               <div className="space-y-3">
-                <button onClick={() => nextStep(2)} className="option-btn">寻找女性</button>
-                <button onClick={() => nextStep(2)} className="option-btn">寻找男性</button>
+                <button onClick={() => nextStep(2)} className="option-btn">Frauen suchen</button>
+                <button onClick={() => nextStep(2)} className="option-btn">Männer suchen</button>
               </div>
             </motion.div>
           )}
@@ -79,11 +79,11 @@ export default function App() {
               className="space-y-5"
             >
               <h2 className="text-xl font-bold text-white min-h-[52px]">
-                步骤 2: 您是否已满 18 周岁?
+                Schritt 2: Sind Sie über 18 Jahre alt?
               </h2>
               <div className="space-y-3">
-                <button onClick={() => nextStep(3)} className="option-btn">是的，我已满 18 岁</button>
-                <button onClick={() => nextStep(3)} className="option-btn">否</button>
+                <button onClick={() => nextStep(3)} className="option-btn">Ja, ich bin über 18</button>
+                <button onClick={() => nextStep(3)} className="option-btn">Nein</button>
               </div>
             </motion.div>
           )}
@@ -97,9 +97,9 @@ export default function App() {
               className="space-y-5"
             >
               <h2 className="text-xl font-bold text-white min-h-[52px]">
-                步骤 3: 您同意对其他用户的身份保密吗?
+                Schritt 3: Stimmen Sie zu, die Identität anderer Nutzer geheim zu halten?
               </h2>
-              <button onClick={startLoading} className="option-btn">我同意</button>
+              <button onClick={startLoading} className="option-btn">Ich stimme zu</button>
             </motion.div>
           )}
 
@@ -112,12 +112,12 @@ export default function App() {
               className="space-y-5"
             >
               <h2 className="text-xl font-bold text-white min-h-[52px]">
-                正在分析您的偏好并搜索附近用户...
+                Analysiere Ihre Präferenzen und suche nach Nutzern in der Nähe...
               </h2>
               <div className="flex justify-center py-4">
                 <Loader2 className="w-9 h-9 text-[#66fcf1] animate-spin" />
               </div>
-              <p className="text-[#66fcf1] font-medium">已找到 14 个匹配项</p>
+              <p className="text-[#66fcf1] font-medium">14 Treffer gefunden</p>
             </motion.div>
           )}
 
@@ -129,10 +129,10 @@ export default function App() {
               className="space-y-5"
             >
               <h2 className="text-xl font-bold text-[#66fcf1] min-h-[52px]">
-                匹配成功!
+                Match erfolgreich!
               </h2>
               <p className="text-sm leading-relaxed text-gray-400 mb-1">
-                请点击下方按钮验证您的身份，并查看附近的匹配对象。
+                Bitte klicken Sie auf die Schaltfläche unten, um Ihre Identität zu verifizieren und Übereinstimmungen in Ihrer Nähe anzuzeigen.
               </p>
             </motion.div>
           )}
@@ -144,7 +144,7 @@ export default function App() {
         href="https://t.crdtg2.com/409098/9953/37712?aff_sub5=SF_006OG000004lmDN"
         className="btn"
       >
-        验证身份并进入
+        Identität verifizieren & Eintreten
       </a>
 
       <div className="disclaimer mt-4 text-[11px] text-white/30 max-w-[380px] text-center relative z-10">
